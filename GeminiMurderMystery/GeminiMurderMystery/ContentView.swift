@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var imageName = "manor"
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            VStack {
+                Text("A\nMurder\nMystery")
+                    .font(.system(size: 90))
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.white)
+                    .shadow(color: .black, radius: 2, x: 1, y: 5)
+                Button {
+                    
+                } label: {
+                    Text("START")
+                        .font(.title2).bold()
+                        .shadow(radius: 2)
+                        .padding(.horizontal, 50)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.orange)
+
+            }
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background {
+            Image(imageName)
+                .resizable()
+                .scaledToFill()
+                .animation(.easeIn(duration: 0.5), value: imageName)
+        }
+        .ignoresSafeArea()
     }
 }
 
