@@ -11,6 +11,8 @@
 		E484E2D12B7A1AEB0012947D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484E2D02B7A1AEB0012947D /* ContentView.swift */; };
 		E484E2D32B7A1AED0012947D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484E2D22B7A1AED0012947D /* Assets.xcassets */; };
 		E484E2D62B7A1AED0012947D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484E2D52B7A1AED0012947D /* Preview Assets.xcassets */; };
+		E484E2DD2B7A27340012947D /* TypewriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484E2DC2B7A27340012947D /* TypewriterView.swift */; };
+		E4C708E62B7A41BC00035B1A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = E4C708E52B7A41BC00035B1A /* GoogleGenerativeAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		E484E2D02B7A1AEB0012947D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E484E2D22B7A1AED0012947D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E484E2D52B7A1AED0012947D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E484E2DC2B7A27340012947D /* TypewriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypewriterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C708E62B7A41BC00035B1A /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				E484E2CE2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift */,
 				E484E2D02B7A1AEB0012947D /* ContentView.swift */,
+				E484E2DC2B7A27340012947D /* TypewriterView.swift */,
 				E484E2D22B7A1AED0012947D /* Assets.xcassets */,
 				E484E2D42B7A1AED0012947D /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = GeminiMurderMystery;
+			packageProductDependencies = (
+				E4C708E52B7A41BC00035B1A /* GoogleGenerativeAI */,
+			);
 			productName = GeminiMurderMystery;
 			productReference = E484E2CB2B7A1AEA0012947D /* GeminiMurderMystery.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = E484E2C22B7A1AEA0012947D;
+			packageReferences = (
+				E4C708E42B7A41BC00035B1A /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			productRefGroup = E484E2CC2B7A1AEA0012947D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E484E2D12B7A1AEB0012947D /* ContentView.swift in Sources */,
+				E484E2DD2B7A27340012947D /* TypewriterView.swift in Sources */,
 				E484E2CF2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4C708E42B7A41BC00035B1A /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4C708E52B7A41BC00035B1A /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4C708E42B7A41BC00035B1A /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E484E2C32B7A1AEA0012947D /* Project object */;
 }
