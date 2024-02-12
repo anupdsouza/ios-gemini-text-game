@@ -13,6 +13,8 @@
 		E484E2D62B7A1AED0012947D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484E2D52B7A1AED0012947D /* Preview Assets.xcassets */; };
 		E484E2DD2B7A27340012947D /* TypewriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484E2DC2B7A27340012947D /* TypewriterView.swift */; };
 		E4C708E62B7A41BC00035B1A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = E4C708E52B7A41BC00035B1A /* GoogleGenerativeAI */; };
+		E4C708EA2B7A424500035B1A /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4C708E82B7A424500035B1A /* GenerativeAI-Info.plist */; };
+		E4C708EB2B7A424500035B1A /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C708E92B7A424500035B1A /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E484E2D22B7A1AED0012947D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E484E2D52B7A1AED0012947D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E484E2DC2B7A27340012947D /* TypewriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypewriterView.swift; sourceTree = "<group>"; };
+		E4C708E82B7A424500035B1A /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
+		E4C708E92B7A424500035B1A /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 				E484E2CE2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift */,
 				E484E2D02B7A1AEB0012947D /* ContentView.swift */,
 				E484E2DC2B7A27340012947D /* TypewriterView.swift */,
+				E4C708E72B7A424500035B1A /* Config */,
 				E484E2D22B7A1AED0012947D /* Assets.xcassets */,
 				E484E2D42B7A1AED0012947D /* Preview Content */,
 			);
@@ -70,6 +75,15 @@
 				E484E2D52B7A1AED0012947D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4C708E72B7A424500035B1A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E4C708E82B7A424500035B1A /* GenerativeAI-Info.plist */,
+				E4C708E92B7A424500035B1A /* APIKey.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,7 @@
 			files = (
 				E484E2D62B7A1AED0012947D /* Preview Assets.xcassets in Resources */,
 				E484E2D32B7A1AED0012947D /* Assets.xcassets in Resources */,
+				E4C708EA2B7A424500035B1A /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,7 @@
 			files = (
 				E484E2D12B7A1AEB0012947D /* ContentView.swift in Sources */,
 				E484E2DD2B7A27340012947D /* TypewriterView.swift in Sources */,
+				E4C708EB2B7A424500035B1A /* APIKey.swift in Sources */,
 				E484E2CF2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
