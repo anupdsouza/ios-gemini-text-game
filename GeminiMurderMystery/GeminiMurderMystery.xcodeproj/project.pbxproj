@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4092FD02B7B6083000B17B3 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4092FCF2B7B6083000B17B3 /* GameState.swift */; };
 		E484E2CF2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484E2CE2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift */; };
 		E484E2D12B7A1AEB0012947D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484E2D02B7A1AEB0012947D /* ContentView.swift */; };
 		E484E2D32B7A1AED0012947D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484E2D22B7A1AED0012947D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4092FCF2B7B6083000B17B3 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		E484E2CB2B7A1AEA0012947D /* GeminiMurderMystery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeminiMurderMystery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E484E2CE2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiMurderMysteryApp.swift; sourceTree = "<group>"; };
 		E484E2D02B7A1AEB0012947D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				E484E2CE2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift */,
 				E484E2D02B7A1AEB0012947D /* ContentView.swift */,
 				E484E2DC2B7A27340012947D /* TypewriterView.swift */,
+				E4092FCF2B7B6083000B17B3 /* GameState.swift */,
 				E4C708E72B7A424500035B1A /* Config */,
 				E484E2D22B7A1AED0012947D /* Assets.xcassets */,
 				E484E2D42B7A1AED0012947D /* Preview Content */,
@@ -117,7 +120,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					E484E2CA2B7A1AEA0012947D = {
 						CreatedOnToolsVersion = 14.3;
@@ -165,6 +168,7 @@
 			files = (
 				E484E2D12B7A1AEB0012947D /* ContentView.swift in Sources */,
 				E484E2DD2B7A27340012947D /* TypewriterView.swift in Sources */,
+				E4092FD02B7B6083000B17B3 /* GameState.swift in Sources */,
 				E4C708EB2B7A424500035B1A /* APIKey.swift in Sources */,
 				E484E2CF2B7A1AEB0012947D /* GeminiMurderMysteryApp.swift in Sources */,
 			);
@@ -177,6 +181,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -209,6 +214,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -237,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -269,6 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
