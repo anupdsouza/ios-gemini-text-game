@@ -15,9 +15,12 @@ struct TypewriterView: View {
     @State private var typingTask: Task<Void, Error>?
     
     var body: some View {
-        Text(animatedText)
-            .onChange(of: text) { _ in animateText() }
-            .onAppear() { animateText() }
+        ScrollView {
+            Text(animatedText)
+                .onChange(of: text) { _ in animateText() }
+                .onAppear() { animateText() }
+        }
+        .scrollIndicators(.never)
     }
     
     private func animateText() {
