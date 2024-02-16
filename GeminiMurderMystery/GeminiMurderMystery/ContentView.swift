@@ -11,7 +11,6 @@ import GoogleGenerativeAI
 struct ContentView: View {
     @State private var fetchingStory = false
     @State private var fetchedStory = false
-    @State private var degreeRotation = 0.0
     @State private var showQuestions = false
     @State private var revealCulprit = false
     @State private var gameState: GameState = .start
@@ -129,7 +128,7 @@ struct ContentView: View {
             .font(.title2)
             .padding()
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + Double(text.count) * 0.0) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + Double(text.count) * 0.05) {
                     showQuestions = true
                 }
             }
