@@ -37,5 +37,5 @@ struct Question: Codable {
     var question: String
     var clue: String
     var responses: [String]
-    var selectedResponse: String? = nil
+    var selectedResponse: String?
 }
